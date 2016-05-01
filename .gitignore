@@ -1,0 +1,10 @@
+
+taxiPlan/target/*
+
+# eclipse
+taxiPlan/.classpath
+taxiPlan/.project
+taxiPlan/.settings/*
+.metadata/
+
+.recommenders

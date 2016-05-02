@@ -8,12 +8,17 @@
 	<session-factory>
 		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
 		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521/XE</property>
-		<property name="hibernate.connection.username">system</property>
-		<property name="hibernate.connection.password">manager</property>
+		<property name="hibernate.connection.username">dbusr</property>
+		<property name="hibernate.connection.password">dbpass</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
-		<property name="hibernate.default_schema">system</property>
-		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.default_schema">dbusr</property>
+
+<!-- 		<property name="hibernate.hbm2ddl.auto">create-drop</property> -->			
+<!-- 		<property name="hibernate.hbm2ddl.auto">create</property> --> 
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
 		<property name="show_sql">true</property>
-		<mapping class="project.database.taxiplan.model.Employee"></mapping>
+		<mapping class="project.database.taxiplan.model.Transaction"></mapping>
+		<mapping class="project.database.taxiplan.model.Job"></mapping>
 	</session-factory>
 </hibernate-configuration>

@@ -1,4 +1,4 @@
-package project.database.taxiplan.service.Transaction;
+package project.database.taxiplan.service.transaction;
 
 import project.database.taxiplan.model.Transaction;
 

@@ -1,4 +1,4 @@
-package project.database.taxiplan.service.Transaction;
+package project.database.taxiplan.service.transaction;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
